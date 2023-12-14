@@ -9,6 +9,7 @@ function CartPage () {
     const navigateTo = useNavigate();
 
     const token = useSelector((state) => state.user.token)
+    
     const handleCheckOut =  async () => {
         axios.get(`${con.URL_SERVER}/api/tickets`,
         {
